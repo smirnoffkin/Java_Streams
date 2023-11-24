@@ -1,0 +1,68 @@
+{
+  "manufacturers": {
+    "architecture": [
+      {
+        "manufacturer": [
+          {
+            "name": "Intel",
+	    "processor": [
+                {
+                  "cores": "4",
+                  "name": "Core i5"
+                },
+                {
+                  "cores": "6",
+                  "name": "Core i7"
+                }
+              ]
+          },
+          {
+            "name": "AMD",
+	    "processor": [
+                {
+                  "cores": "6",
+                  "name": "Ryzen 5"
+                },
+                {
+                  "cores": "8",
+                  "name": "Ryzen 7"
+                }
+              ]
+          }
+        ],
+      "name": "x86"
+      },
+      {
+        "manufacturer": [
+          {
+            "name": "Qualcomm",
+	    "processor": [
+                {
+                  "cores": "8",
+                  "name": "Snapdragon 888"
+                },
+                {
+                  "cores": "6",
+                  "name": "Snapdragon 865"
+                }
+              ]
+          },
+          {
+            "name": "Apple",
+	    "processor": [
+                {
+                  "cores": "8",
+                  "name": "M1"
+                },
+                {
+                  "cores": "6",
+                  "name": "A14 Bionic"
+                }
+              ]
+          }
+        ],
+      "name": "ARM"
+      }
+    ]
+  }
+}
