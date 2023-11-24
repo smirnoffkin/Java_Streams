@@ -29,6 +29,9 @@ public class Main {
         Streams.outputSortedByName(manufacturerArrayList);
         System.out.println();
 
+        System.out.println("Вывод всех названий процессоров");
+        Streams.outputNameOfProcessors(manufacturerArrayList);
+        System.out.println();
     }
 
     private static String getFileExtension(String filePath) {

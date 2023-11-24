@@ -28,4 +28,14 @@ public class Streams {
             System.out.println(manufacturer.getNAME());
         }
     }
+
+    public static void outputNameOfProcessors(ArrayList<Manufacturer> manufacturerArrayList) {
+        Stream<Map<String, Integer>> list = manufacturerArrayList.stream().map(Manufacturer::getCPUs);
+        List<Map<String, Integer>> processors = list.toList();
+        for (Map<String, Integer> processor : processors) {
+            for (String key : processor.keySet()) {
+                System.out.println(key);
+            }
+        }
+    }
 }
