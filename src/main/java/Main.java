@@ -13,10 +13,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        ArrayList<Manufacturer> manufacturers = readXml("Manufacturer.xml");
+        String filePath = "Manufacturer.xml";
+        XmlReader reader = new XmlReader(filePath);
+        ArrayList<Manufacturer> manufacturerArrayList = reader.read();
 
-
-        Streams.writeNames(manufacturers);
+        System.out.println("Вывод архитектур производителей");
+        Streams.outputArchitectures(manufacturerArrayList);
         System.out.println();
 
     }

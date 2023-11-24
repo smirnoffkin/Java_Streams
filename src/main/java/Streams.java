@@ -3,13 +3,11 @@ import lombok.experimental.UtilityClass;
 import Model.Manufacturer;
 
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-@UtilityClass
-@NonNull
+
 public class Streams {
-    public void writeNames(ArrayList<Manufacturer> manufacturers) {
-        manufacturers
-                .forEach(s -> System.out.println(s.getNAME()));
+    public static void outputArchitectures(ArrayList<Manufacturer> manufacturerArrayList) {
+        manufacturerArrayList.stream().map(Manufacturer::getARCHITECTURE).forEach(System.out::println);
     }
 }
