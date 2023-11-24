@@ -25,6 +25,10 @@ public class Main {
         Streams.outputManufacturerWithLess4Symbols(manufacturerArrayList);
         System.out.println();
 
+        System.out.println("Отсортированный вывод всех названий производителей");
+        Streams.outputSortedByName(manufacturerArrayList);
+        System.out.println();
+
     }
 
     private static String getFileExtension(String filePath) {

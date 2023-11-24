@@ -20,4 +20,12 @@ public class Streams {
             System.out.println(manufacturer.getNAME());
         }
     }
+
+    public static void outputSortedByName(ArrayList<Manufacturer> manufacturerArrayList) {
+        Stream<Manufacturer> list = manufacturerArrayList.stream().sorted(Comparator.comparing(Manufacturer::getNAME));
+        List<Manufacturer> manufacturerList = list.toList();
+        for (Manufacturer manufacturer : manufacturerList) {
+            System.out.println(manufacturer.getNAME());
+        }
+    }
 }
