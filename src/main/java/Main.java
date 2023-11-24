@@ -21,6 +21,10 @@ public class Main {
         Streams.outputArchitectures(manufacturerArrayList);
         System.out.println();
 
+        System.out.println("Вывод всех производителей имена которых содержат меньше 4 символов");
+        Streams.outputManufacturerWithLess4Symbols(manufacturerArrayList);
+        System.out.println();
+
     }
 
     private static String getFileExtension(String filePath) {
