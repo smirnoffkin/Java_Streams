@@ -38,4 +38,12 @@ public class Streams {
             }
         }
     }
+
+    public static void outputNotx86Manufacturers(ArrayList<Manufacturer> manufacturerArrayList) {
+        Stream<Manufacturer> list = manufacturerArrayList.stream().filter(i -> !i.getARCHITECTURE().equals("x86"));
+        List<Manufacturer> manufacturerList = list.toList();
+        for (Manufacturer manufacturer : manufacturerList) {
+            System.out.println(manufacturer.getNAME());
+        }
+    }
 }

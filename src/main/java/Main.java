@@ -32,6 +32,10 @@ public class Main {
         System.out.println("Вывод всех названий процессоров");
         Streams.outputNameOfProcessors(manufacturerArrayList);
         System.out.println();
+
+        System.out.println("Вывод всех производителей, не выпускающих x86 процессоров");
+        Streams.outputNotx86Manufacturers(manufacturerArrayList);
+        System.out.println();
     }
 
     private static String getFileExtension(String filePath) {
